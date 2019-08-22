@@ -85,6 +85,22 @@ const processStatusToSendEmail = (interestStatus, opportunity, volunteer) => {
   })
   if (isEvent1DayOnly(opportunity)) {
     addEventToIcalCalendar(calendar, opportunity)
+  } else {
+    const cleanEventDescription = htmlSanitizer(opportunity.description, {
+      allowedTags: [],
+      allowedAttributes: {}
+    })
+    console.log(opportunity.description)
+    console.log(cleanEventDescription)
+    calendar.createEvent({
+      start: moment(opportunity.date[0]),
+      end: moment(opportunity.date[1]),
+      timestamp: moment(),
+      summary: `Voluntarily event: ${opportunity.title}`,
+      description: `${cleanEventDescription}`,
+      url: `${config.appUrl}/ops/${opportunity._id}`,
+      organizer: 'Voluntarily <team@voluntari.ly>'
+    })
   }
 
   icalString = calendar.toString()
