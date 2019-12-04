@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { Icon } from 'antd'
 import { PBold } from './VTheme'
+import { FormattedMessage } from 'react-intl'
 const ComingsoonContainer = styled.div`
   display: grid;
   width: 100%;
@@ -24,7 +25,11 @@ export function ComingSoon ({ children }) {
       <ComingSoonGrid>
         <Icon spin style={{ fontSize: '40px', color: '#333' }} type='deployment-unit' />
         <div>
-          <PBold>Needs Work</PBold>
+          <PBold><FormattedMessage 
+              id='comingSoon' 
+              description='title for coming soon component'
+              defaultMessage='Needs Work'
+              /></PBold>
           <p>{children}</p>
         </div>
       </ComingSoonGrid>
