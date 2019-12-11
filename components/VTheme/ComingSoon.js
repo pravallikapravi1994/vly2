@@ -25,11 +25,13 @@ export function ComingSoon ({ children }) {
       <ComingSoonGrid>
         <Icon spin style={{ fontSize: '40px', color: '#333' }} type='deployment-unit' />
         <div>
-          <PBold><FormattedMessage 
+          <PBold>
+            <FormattedMessage 
               id='comingSoon' 
               description='title for coming soon component'
               defaultMessage='Needs Work'
-              /></PBold>
+            />
+          </PBold>
           <p>{children}</p>
         </div>
       </ComingSoonGrid>
