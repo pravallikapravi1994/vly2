@@ -64,6 +64,7 @@ class PersonDetailForm extends Component {
         person.role = values.role
         person.status = values.status
         person.education = values.education
+        person.job = values.job
         window.scrollTo(0, 0)
         this.props.onSubmit(this.props.person)
       }
@@ -185,6 +186,13 @@ class PersonDetailForm extends Component {
           <Icon type='question-circle-o' />
         </Tooltip>
       </span>
+    )
+    const personJob = (
+      <FormattedMessage
+        id='personJob'
+        defaultMessage='Job'
+        description='What is your Job title'
+      />
     )
 
     const personTags = (

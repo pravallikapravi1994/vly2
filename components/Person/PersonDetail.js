@@ -150,7 +150,12 @@ const PersonDetail = ({ person }, ...props) => (
             <StyledIcon type='book' />
             {person.education}
           </li>
-
+          <li>
+            <a href={defaultToHttpScheme(person.job)} rel='noopener noreferrer' target='_blank'>
+              <StyledIcon type='global' />
+              {person.job}
+            </a>
+          </li>
         </PersonUl>
       </InfoSection>
       <InfoSection>
