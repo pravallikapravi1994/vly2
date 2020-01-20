@@ -323,10 +323,13 @@ class PersonDetailForm extends Component {
                   <EducationSelectorRef />
                 )}
               </Form.Item>
+              <Form.Item lable={personJob}>
+                {getFieldDecorator('job')}
+                (<Input placeholder='job' />)}
+              </Form.Item>
             </InputContainer>
           </FormGrid>
           <Divider />
-
           <FormGrid>
             <DescriptionContainer>
               <TitleContainer>
@@ -472,6 +475,7 @@ PersonDetailForm.propTypes = {
     facebook: PropTypes.string,
     twitter: PropTypes.string,
     website: PropTypes.string,
+    job: PropTypes.string,
     pronoun: PropTypes.object,
     imgUrl: PropTypes.any,
     role: PropTypes.arrayOf(
@@ -559,6 +563,10 @@ export default Form.create({
       website: Form.createFormField({
         ...props.person.website,
         value: props.person.website
+      }),
+      job: Form.createFormField({
+        ...props.person.job,
+        value: props.person.job
       }),
       role: Form.createFormField({
         ...props.person.role,

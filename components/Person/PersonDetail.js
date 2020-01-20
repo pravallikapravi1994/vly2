@@ -195,6 +195,7 @@ PersonDetail.propTypes = {
     facebook: PropTypes.string,
     twitter: PropTypes.string,
     website: PropTypes.string,
+    job: PropTypes.string,
     pronoun: PropTypes.object,
     imgUrl: PropTypes.any,
     role: PropTypes.arrayOf(
