@@ -152,7 +152,7 @@ const PersonDetail = ({ person }, ...props) => (
           </li>
           <li>
             <a href={defaultToHttpScheme(person.job)} rel='noopener noreferrer' target='_blank'>
-              <StyledIcon type='global' />
+              <StyledIcon type='person' />
               {person.job}
             </a>
           </li>
