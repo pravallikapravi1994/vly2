@@ -188,20 +188,12 @@ class PersonDetailForm extends Component {
       </span>
     )
     const personJob = (
-      <span>
-        {' '}
-        <FormattedMessage
-          id='personJob'
-          defaultMessage='What is your Job title'
-          description='What is your Job title'
-        />
-       &nbsp;
-        <Tooltip title='What is your job title'>
-          <Icon type='question-circle-o' />
-        </Tooltip>
-      </span>
+      <FormattedMessage
+        id='job'
+        defaultMessage='What is your Job Title?'
+        description='person Job label in personDetails Form'
+      />
     )
-
     const personTags = (
       <FormattedMessage
         id='personTags'
@@ -330,9 +322,9 @@ class PersonDetailForm extends Component {
                   <EducationSelectorRef />
                 )}
               </Form.Item>
-              <Form.Item lable={personJob}>
+              <Form.Item label={personJob}>
                 {getFieldDecorator('job')}
-                <Input placeholder='What is your job title' />
+                <Input placeholder='Enter your job title here' />
               </Form.Item>
             </InputContainer>
           </FormGrid>

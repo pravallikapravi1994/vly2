@@ -151,10 +151,8 @@ const PersonDetail = ({ person }, ...props) => (
             {person.education}
           </li>
           <li>
-            <a href={defaultToHttpScheme(person.job)} rel='noopener noreferrer' target='_blank'>
-              <StyledIcon type='person' />
-              {person.job}
-            </a>
+            <StyledIcon type='book' />
+            {person.job}
           </li>
         </PersonUl>
       </InfoSection>
@@ -192,10 +190,10 @@ PersonDetail.propTypes = {
     location: PropTypes.string,
     email: PropTypes.string,
     phone: PropTypes.string,
+    job: PropTypes.string,
     facebook: PropTypes.string,
     twitter: PropTypes.string,
     website: PropTypes.string,
-    job: PropTypes.string,
     pronoun: PropTypes.object,
     imgUrl: PropTypes.any,
     role: PropTypes.arrayOf(
