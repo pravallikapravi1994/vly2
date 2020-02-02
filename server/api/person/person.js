@@ -22,6 +22,7 @@ const personSchema = new Schema({
   website: { type: 'String', required: false },
   facebook: { type: 'String', required: false },
   twitter: { type: 'String', required: false },
+  job: { type: 'String', default: '' },
   education: { type: 'String' },
   role: {
     type: [String],
