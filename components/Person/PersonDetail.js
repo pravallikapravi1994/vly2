@@ -152,7 +152,7 @@ const PersonDetail = ({ person }, ...props) => (
           </li>
           <li>
             <StyledIcon type='book' />
-            Job here: {person.job}
+            {person.job}
           </li>
         </PersonUl>
       </InfoSection>
