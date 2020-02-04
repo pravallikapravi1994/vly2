@@ -151,7 +151,7 @@ const PersonDetail = ({ person }, ...props) => (
             {person.education}
           </li>
           <li>
-            <StyledIcon type='book' />
+            <StyledIcon type='coffee' />
             {person.job}
           </li>
         </PersonUl>

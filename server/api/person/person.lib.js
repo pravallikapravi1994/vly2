@@ -28,7 +28,6 @@ const personProfileCompleteness = (person) => {
   scoreStr(person.location, 4)
   scoreStr(person.phone, 7)
   scoreStr(person.imgUrl, 10)
-  scoreStr(person.job, 10)
   // scoreStr(person.pronoun, 4) // defaulted
   // scoreStr(person.language, 4) // defaulted
   scoreStr(person.website, 10)
