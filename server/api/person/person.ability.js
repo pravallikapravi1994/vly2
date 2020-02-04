@@ -33,8 +33,7 @@ const ruleBuilder = session => {
       PersonFields.TAGS,
       PersonFields.FACEBOOK,
       PersonFields.WEBSITE,
-      PersonFields.TWITTER,
-      PersonFields.JOB
+      PersonFields.TWITTER
     ]
   }, {
     subject: SchemaName,
@@ -52,8 +51,7 @@ const ruleBuilder = session => {
       PersonFields.TAGS,
       PersonFields.FACEBOOK,
       PersonFields.WEBSITE,
-      PersonFields.TWITTER,
-      PersonFields.JOB
+      PersonFields.TWITTER
     ]
   }, {
     subject: SchemaName,
