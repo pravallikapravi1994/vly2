@@ -27,3 +27,10 @@ Feature: Voluntarily Portal Checks
     Given I open the Voluntarily portal
     When I can register into the Voluntarily system
     Then I can login into the Voluntarily system
+    
+    
+  Scenario: Sign up 
+    Given I open the Voluntarily portal
+    When I can signup into Voluntarily system
+    Then I can login into the Voluntarily system by verifying received email
+    
